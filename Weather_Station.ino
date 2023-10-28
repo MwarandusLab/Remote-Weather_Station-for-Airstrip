@@ -75,7 +75,7 @@ void loop() {
     if (message.indexOf("STATUS") != -1) {           // if the message contains "ON"
       sim800l.println("AT+CMGF=1");  // Configuring TEXT mode
       updateSerial();
-      sim800l.println("AT+CMGS=\"+254795052191\"");  //change ZZ with country code and xxxxxxxxxxx with phone number to sms
+      sim800l.println("AT+CMGS=\"+254748613509\"");  //change ZZ with country code and xxxxxxxxxxx with phone number to sms
       updateSerial();
       sim800l.println("   WEATHER STATION DATA");  //text content
       sim800l.print("Temperature: ");
